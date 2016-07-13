@@ -2,6 +2,11 @@ var bookmarkCount = 0;
 var readBookmarkCount = 0;
 var unreadBookmarkCount = 0;
 
+function validUrl(valid) {
+ var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+ return regexp.test(valid);
+}
+
 function counters() {
   bookmarkCount = $('li').length;
   $('.count-js').replaceWith('<p class="count-js">' + "Bookmarks in Inventory :" + bookmarkCount + '</p>');
@@ -14,7 +19,7 @@ function counters() {
 $('.text-input-js, .url-input-js').on('keyup', function() {
   var url = $('.url-input-js').val();
   var title = $('.text-input-js').val();
-  if (title !== "" && url !== "") {
+  if (title !== '' && url !== '') {
     $('#submit-js').prop('disabled', false);
   } else {
     $('#submit-js').prop('disabled', true);
@@ -25,12 +30,12 @@ $('#submit-js').on('click', function(event) {
   event.preventDefault();
   var url = $('.url-input-js').val();
   var title = $('.text-input-js').val();
-  var paragraph = document.createElement('p')
-  $('.error-message-area-js').append(paragraph);
-  if (url === "" || title === "") {
-    return $(paragraph).prepend('Error: Please fill in both the Title and URL. 👻');
+  var article = document.createElement('article')
+  if (!validUrl(url)) {
+    $('.error-message-area-js').append(article);
+    return $(article).append( '<p class="error-message-js">' + 'Error: Please enter a valid URL. 👻' + '</p>');
   } else {
-    $('.error-message-area-js').remove();
+    $('.error-message-js').parent().remove();
   }
   var list = document.createElement('li');
   $(list).append("<h4>" + title + "</h4>");
@@ -38,6 +43,9 @@ $('#submit-js').on('click', function(event) {
   $(list).append('</br>' + '<button class="read-button-js">READ</button>');
   $(list).append('<button class="remove-button-js">REMOVE</button>');
   $('.bookmark-output-js').append(list);
+  $('.text-input-js').val('');
+  $('.url-input-js').val('');
+  $('#submit-js').prop('disabled', true);
   counters();
 });
 
