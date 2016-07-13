@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>bookmarker!</title>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
@@ -11,7 +12,7 @@
       <h1>Bookmark Log</h1>
     </header>
 
-    <form class="">
+    <form class="bookmarkform">
       <label>Title:</label>
       <input class="text-input-js" type="text">
       </br>
@@ -22,6 +23,8 @@
     </form>
 
    <section>
+     <article class="error-message-area-js">
+     </article>
      <ul class="bookmark-output-js"></ul>
    </section>
 
@@ -29,3 +32,5 @@
   <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
+
+<!-- Add warning that if page is left or reloaded, all bookmarks will be lost  -->
