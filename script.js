@@ -1,14 +1,18 @@
 
 $('#submit-js').on('click', function(event) {
   event.preventDefault();
-  var url = $('.url-input').val();
-  var title = $('.text-input').val();
-  var list = document.createElement('li');
+  // debugger;
+  var url = $('.url-input-js').val();
+  var title = $('.text-input-js').val();
   $(list).append('</br>' + title);
-  $(list).append('</br>' + url);
-  $(list).append('</b>' + '<button class="read-button-js">READ</button>');
+  $(list).append('</br>' + "<a href='" + url + "'>" + url + "</a>");
+  $(list).append('</br>' + '<button class="read-button-js">READ</button>');
   $(list).append('<button class="remove-button-js">REMOVE</button>');
   $('.bookmark-output-js').append(list)
+  var list = document.createElement('li');
+  if (url === "" || title === "") {
+    alert("🙈")
+    }
 });
 
 
