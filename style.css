@@ -1,3 +1,58 @@
-.read {
-  background: red;
+body {
+  background-color: #FFD06E;
+  font-family: 'Droid Sans', sans-serif;
 }
+
+h1 {
+  background-color: #6EA4FF;
+  border-radius: 15px;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 1em;
+  padding: 10px;
+  text-align: center;
+}
+
+.bookmarkform {
+  background-color: #A4D1FF;
+  box-shadow: 0 0 10px 10px #3B67B2;
+  display: block;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 10px 0;
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  font-size: 100%;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+li {
+  background-color: #6EA4FF;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 30px;
+  margin: 0 1em 1em 1em;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.read {
+  background-color: #3B67B2;
+}
+
+
+/*
+FFD06E light brown
+B28629 darker brown
+A4D1FF light blue
+6EA4FF baby blue
+3B67B2 darker blue
+*/
+/*
+
+*/
