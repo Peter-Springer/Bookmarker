@@ -1,10 +1,14 @@
 body {
-  background-color: #FFD06E;
+  background: url(images/typewriter.jpg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  color: white;
   font-family: 'Droid Sans', sans-serif;
 }
 
 h1 {
-  background-color: #6EA4FF;
+  background-color: grey;
+  color: white;
   border-radius: 15px;
   display: flex;
   font-size: 30px;
@@ -13,11 +17,12 @@ h1 {
   margin: 1em;
   padding: 15px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .bookmarkform {
-  background-color: #A4D1FF;
-  box-shadow: 0 0 10px 10px #3B67B2;
+  background-color: grey;
+  box-shadow: 0 0 10px 10px black;
   display: block;
   justify-content: center;
   margin-bottom: 1em;
@@ -33,7 +38,7 @@ input {
 }
 
 li {
-  background-color: #6EA4FF;
+  background-color: grey;
   border-radius: 10px;
   justify-content: center;
   line-height: 30px;
@@ -43,16 +48,17 @@ li {
 }
 
 .read {
-  background-color: #3B67B2;
+  background-color: black;
 }
 
 .error-message {
-  color: #D61700;
-  font-size: 17px;
+  color: white;
+  font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
   text-align: center;
 }
+
 
 @media (min-width: 700px) {
 
