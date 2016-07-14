@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>bookmarker!</title>
-        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    <header>
-      <h1>Bookmark Log</h1>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>bookmarker!</title>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>Bookmark Log</h1>
+  </header>
 
-    <form class="bookmark-form">
-      <label>Title:</label>
-      <input class="text-input-js" type="text">
-      </br>
-      <label>URL:</label>
-      <input class="url-input-js" type="url" >
-      </br>
-      <button id="submit-js" disabled="">Submit</button>
-    </form>
+  <form class="bookmarkform">
+    <label>Title:</label>
+    <input class="text-input-js" type="text">
+  </br>
+  <label>URL:</label>
+  <input class="url-input-js" type="url" >
+</br>
+<button id="submit-js" disabled="">Submit</button>
+</form>
 
-   <section>
-     <section class="error-message-area-js error-message">
-     </section>
-     <article class="bookmark-count">
-       <p class="count-js">
-         Bookmarks in Inventory :
-       </p>
-       <p class="read-count-js">
-         Read Bookmarks :
-       </p>
-       <button class="clear-read-js">Clear Read Bookmarks</button>
-       <p class="unread-count-js">
-         Unread Bookmarks :
-       </p>
-     </article>
-     <ul class="bookmark-output-js"></ul>
-   </section>
+<section>
+  <section class="error-message-area-js error-message">
+  </section>
+  <article>
+    <p class="count-js">
+      Bookmarks in Inventory :
+    </p>
+    <p class="read-count-js">
+      Read Bookmarks :
+    </p>
+    <button class="clear-read-js">Clear Read Bookmarks</button>
+    <p class="unread-count-js">
+      Unread Bookmarks :
+    </p>
+  </article>
+  <ul class="bookmark-output-js"></ul>
+</section>
 
-  <script src="jquery.js" charset="utf-8"></script>
-  <script src="script.js" charset="utf-8"></script>
-  </body>
+<script src="jquery.js" charset="utf-8"></script>
+<script src="script.js" charset="utf-8"></script>
+</body>
 </html>
-
-<!-- Add warning that if page is left or reloaded, all bookmarks will be lost  -->

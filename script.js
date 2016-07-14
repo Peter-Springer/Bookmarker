@@ -3,8 +3,8 @@ var readBookmarkCount = 0;
 var unreadBookmarkCount = 0;
 
 function validUrl(valid) {
- var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
- return regexp.test(valid);
+  var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+  return regexp.test(valid);
 }
 
 function counters() {
